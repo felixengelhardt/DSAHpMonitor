@@ -29,7 +29,7 @@
                 android:clickable="true"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_light"
-                android:textSize="40sp" />
+                android:textSize="55sp" />
 
             <TextView
                 android:id="@+id/Astralenergie"
@@ -42,7 +42,7 @@
                 android:clickable="true"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_light"
-                android:textSize="40sp" />
+                android:textSize="55sp" />
 
         </RelativeLayout>
 
@@ -65,9 +65,9 @@
 
             <Button
                 android:id="@+id/LEplus1But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginRight="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
 
@@ -75,11 +75,11 @@
                 android:clickable="true" />
             <Button
                 android:id="@+id/AEplus1But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="60dp"
                 android:layout_toRightOf="@id/LEplus1But"
                 android:background="@drawable/ic_plus_one"
                 android:clickable="true"/>
@@ -97,21 +97,21 @@
 
             <Button
                 android:id="@+id/LEplus5But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginRight="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/ic_plus_five"
                 android:clickable="true"/>
             <Button
                 android:id="@+id/AEplus5But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:clickable="true"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="60dp"
                 android:background="@drawable/ic_plus_five" />
         </LinearLayout>
 
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="50dp"
                 android:textAlignment="center"
                 android:textColor="#DB3236"
                 android:textSize="70sp" />
@@ -135,7 +135,7 @@
                 android:id="@+id/AEWert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="50dp"
                 android:text="00"
                 android:textAlignment="center"
                 android:textColor="#4885ED"
@@ -155,19 +155,19 @@
 
             <Button
                 android:id="@+id/LEminus5But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="60dp"
                 android:background="@drawable/ic_minus_five"
                 android:clickable="true" />
 
             <Button
                 android:id="@+id/AEminus5But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/ic_minus_five"
@@ -186,9 +186,9 @@
 
             <Button
                 android:id="@+id/LEminus1But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginRight="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/ic_minus_one"
@@ -196,9 +196,9 @@
 
             <Button
                 android:id="@+id/AEminus1But"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/ic_minus_one"
@@ -236,8 +236,8 @@
 
             <Button
                 android:id="@+id/SchmerzMinus"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -245,8 +245,8 @@
 
             <ImageView
                 android:id="@+id/Stufe1Base"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_weight="1"
                 android:layout_toRightOf="@+id/SchmerzMinus"
                 app:srcCompat="@drawable/ic_pain_base" />
@@ -264,8 +264,8 @@
 
             <ImageView
                 android:id="@+id/Stufe2Base"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@id/Stufe1Base"
@@ -284,8 +284,8 @@
 
             <ImageView
                 android:id="@+id/Stufe3Base"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
                 android:layout_toRightOf="@id/Stufe2Base"
@@ -304,8 +304,8 @@
 
             <Button
                 android:id="@+id/SchmerzPlus"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@id/Stufe3Base"
                 android:layout_weight="1"

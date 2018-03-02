@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView Astralenergie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
+        //getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
         AEWert = (TextView) findViewById(R.id.AEWert);
