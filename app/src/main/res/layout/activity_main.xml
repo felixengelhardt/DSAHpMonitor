@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.chaos2k.de.dsahpmonitor.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/indicators_AE_LE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Lebensenergie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="30dp"
+                android:text="LE"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/Astralenergie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/Lebensenergie"
+                android:text="AE"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="40sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/Trenner_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indicators_AE_LE"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/LEplus1But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@drawable/ic_plus_one"
+                android:clickable="true" />
+            <Button
+                android:id="@+id/AEplus1But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/LEplus1But"
+                android:background="@drawable/ic_plus_one"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/LEplus5But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_plus_five"
+                android:clickable="true"/>
+            <Button
+                android:id="@+id/AEplus5But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/ic_plus_five" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/LEWert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginRight="15dp"
+                android:textAlignment="center"
+                android:textColor="#DB3236"
+                android:textSize="70sp" />
+
+            <TextView
+                android:id="@+id/AEWert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="#4885ED"
+                android:textSize="70sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/LEminus5But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ic_minus_five"
+                android:clickable="true" />
+
+            <Button
+                android:id="@+id/AEminus5But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_minus_five"
+                android:layout_toRightOf="@id/LEminus5But"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/LEminus1But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_minus_one"
+                android:clickable="true" />
+
+            <Button
+                android:id="@+id/AEminus1But"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_minus_one"
+                android:layout_toRightOf="@id/LEminus1But"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Trenner_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/SchmerzText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:text="Schmerz"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+>
+
+            <Button
+                android:id="@+id/SchmerzMinus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/ic_pain_minus" />
+
+            <ImageView
+                android:id="@+id/Stufe1Base"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/SchmerzMinus"
+                app:srcCompat="@drawable/ic_pain_base" />
+
+            <ImageView
+                android:id="@+id/Stufe1Checked"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/Stufe1Base"
+                android:layout_alignLeft="@id/Stufe1Base"
+                android:layout_alignRight="@id/Stufe1Base"
+                android:layout_alignTop="@id/Stufe1Base"
+                app:srcCompat="@drawable/ic_pain_indicator" />
+
+            <ImageView
+                android:id="@+id/Stufe2Base"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/Stufe1Base"
+                app:srcCompat="@drawable/ic_pain_base" />
+
+            <ImageView
+                android:id="@+id/Stufe2Checked"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/Stufe2Base"
+                android:layout_alignLeft="@id/Stufe2Base"
+                android:layout_alignRight="@id/Stufe2Base"
+                android:layout_alignTop="@id/Stufe2Base"
+                app:srcCompat="@drawable/ic_pain_indicator" />
+
+            <ImageView
+                android:id="@+id/Stufe3Base"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/Stufe2Base"
+                app:srcCompat="@drawable/ic_pain_base" />
+
+            <ImageView
+                android:id="@+id/Stufe3Checked"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/Stufe3Base"
+                android:layout_alignLeft="@id/Stufe3Base"
+                android:layout_alignRight="@id/Stufe3Base"
+                android:layout_alignTop="@id/Stufe3Base"
+                app:srcCompat="@drawable/ic_pain_indicator" />
+
+            <Button
+                android:id="@+id/SchmerzPlus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/Stufe3Base"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/ic_pain_plus" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
